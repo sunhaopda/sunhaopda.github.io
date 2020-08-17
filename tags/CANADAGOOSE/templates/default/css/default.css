@@ -1,0 +1,97 @@
+body{color:#999;font-family:Arial,"Microsoft YaHei",Arial,helvetica,Sans-Serif;font-size:1em;}body,img,ul,li,p{padding:0px;margin:0px}a,img,ul,li,p{text-decoration:none;list-style:none}.fl{float:left}
+
+.fl100{float: left;width:100%;}
+.fl50{float:left;width:50%;}
+.fr{float: right;}
+.m005{margin: 0 0.5em;}
+.header{float: left;width: 100%;background-image: url(/templates/default/images/head_bg.jpg);background-repeat: repeat-x;height: 4em;}
+.header .log1{float: left;height:2.5em;margin-top: 0.75em;}
+.header .log2{float: left;height:1.6em;margin-top: 1.3em;}
+.tkf{float: right;text-align:left;margin-right: 0.2em;margin-top: 1.4em;line-height: 0.5em;}
+.tkf span{font-size: 0.6em;}
+.tkf b{color:#F90;font-size: 0.8em;}
+.dnav1{float: left;width:100%;line-height: 2.2em;background-color:#b8030c;}
+.bgtop{padding-top:2px;background-image: url(/templates/default/images/hengge.jpg);background-repeat: repeat-x;background-position: left top;}
+.dnav1 a{line-height: 2.22em;background-color:#b8030c;float: left;width: 33%;text-align: center;color: white;}
+.dnav1 .a1{background-image: url(/templates/default/images/shuge.jpg);background-repeat:repeat-y;background-position: right top;}
+.dnav1 .a2{width: 34%;}
+.banner{float: left;width:100%;margin-top: 0.5em;}
+.banner .swiper-container {width: 100%;height: 100%;}
+.banner .swiper-container a{float: left;width:100%;}
+.banner .swiper-container img{float: left;width: 100%;}
+
+.dzj{float: left;width:100%;margin-top: 0.5em;border-top: 1px solid #e5e5e5;}
+.mt0{margin-top:0em;}
+.dzj .t{float: left;width: 100%;background-image: url(/templates/default/images/box_bg1.jpg);line-height: 2.2em;}
+.dzj .ab{float: left;color: #C00108;font-weight: bold;padding-left: 1em;background-image: url(/templates/default/images/box_bg2.gif);background-repeat: no-repeat;background-position: -0.6em -0.15em;}
+.dzj .am{float: right;}
+.dzj .am img{float: left;margin-right: 0.5em;margin-top: 0.7em;}
+.dzj .n{float: left;margin: 0.5em;vertical-align: top;text-align: justify;}
+.dzj .n a{float: left;color: #999;font-size: 0.8em;line-height:1.2em;height: 11.6em;overflow: hidden;}
+.dzj .n a img{float: left;width: 50%;margin: 0em 0.5em 0em 0em;}
+.dzj .n2{float: left;margin: 0.5em;vertical-align: top;text-align: justify;}
+.dzj .n2 a{float: left;color: #999;font-size: 0.8em;line-height:1.2em;}
+.dzj .n2 a img{float: left;width: 50%;margin: 0em 0.5em 0em 0em;}
+.dzj .nt1{float: left;width:30%;text-align: center;color: #C00108;font-weight:bold;background-color: #F5F5F5;border-right:1px solid #E5E5E5;padding:0.5em 0em;font-size: 0.8em;}
+.dzj .nt2{float: left;width:30%;text-align: center;color: #333333;border-right:1px solid #E5E5E5;padding:0.5em 0em;font-size: 0.8em;}
+.dzj .nt3{float: left;width: 100%;background-color: #F5F5F5;padding: 0.5em 0em;padding-bottom: 0em;}
+.dzj .m1{float:left;margin: 0em 0.25em 0.5em 0.5em;}
+.dzj .m2{float:left;margin: 0em 0.5em 0.5em 0.25em;}
+.dzj .dsp{float: left;width:100%;background-color: white;}
+.dzj .dsp .d1{float:left;margin: 0.25em;}
+.dzj .dsp .d1 .dt{float: left;width: 100%;}
+.dzj .dsp .d1 .dt a{float: left;width: 100%;font-size: 0.8em;color: #C00108;}
+.dzj .dsp .d1 .dt p{float: left;width: 50%;font-size: 0.6em;}
+.dzj .dsp .d1 .dt p span{color: #C00108;font-weight: bold;}
+.dzj .dsp a{float: left;}
+.dzj .dsp img{float: left;width: 100%;}
+.dzj .dsp .sp1{float: left;width: 100%;font-weight: bold;font-size: 0.8em;color: #C00108;}
+.dzj .dsp .a1{width: 100%;font-size: 0.6em;color: #666;line-height: 1.0em;height: 2.0em;overflow: hidden;}
+.dzj .dsp .d2{float: left;width: 50%;font-size: 0.6em;}
+.dzj .dsp .d2 span{font-weight: bold;color:#C49173;}
+.dzj .dsp .t1{color:#38b;text-align: right;}
+.dzj .nt4{float: left;width: 100%;background-color: #F5F5F5;padding: 0.5em 0em;}
+.dzj .nt4 .n1{float: left;position: relative;width: 100%;line-height: 1.5em;height:1.5em;overflow: hidden;}
+.dzj .nt4 .n1 a{font-size: 0.8em;color:#666;margin-left: 0.5em;height: 1.5em;line-height:1.5em;overflow: hidden;position: absolute;margin:0em 6em 0em 0.5em ;}
+.dzj .nt4 .n1 span{position: absolute;right: 0;top: 0;font-size: 0.8em;line-height:1.5em;margin-right:0.5em;}
+.dzj .a3{float: left;width:33.33%;text-align: center;color: #666;font-size: 0.8em;padding:1em 0em;background-color: #F5F5F5;}
+.dzj .a2{float: left;width:33.33%;text-align: center;color: #666;font-size: 0.8em;padding:1em 0em;}
+.dzj .a4{float: left;width: 25%;text-align: center;color: #666;font-size: 0.8em;margin: 0.8em 0em;height:1.1em;line-height:1.1em;}
+
+.dzj .fanye{float: left;width: 100%;line-height:1.2em;}
+.dzj .fanye a{float: left;text-align:center;font-size:0.8em;width:7%;color: #333;}
+.dzj .fanye span{float: left;text-align:center;font-size:0.8em;width:7%;color: #333;}
+
+.dzj .ps{float: left;width: 100%;background-image: url(/templates/default/images/box_bg1.jpg);line-height: 2.2em;height:2.2em;overflow: hidden;}
+.dzj .dpri{float:left;width: 100%;line-height: 1.2em;margin-top: 0.5em;}
+.dzj .dpri .sp2{float: left;font-size: 0.8em;margin-left: 1em;}
+.dzj .dpri .sp3{float: left;color: #C00108;font-size: 0.8em;}
+.dzj .dpri strong{float: left;font-size: 1.2em;color: #C00108;}
+.dzj .dpri1{float: left;width: 100%;}
+.dzj .dpri1 .sp4{float: left;font-size: 0.8em;margin-left: 1em;}
+.dzj .dpri1 .sp5{float: left;font-size: 0.8em;}
+.dzj .dpri1 del{float: left;font-size: 0.8em;}
+
+.dzj .dps{float: left;width: 100%;font-size: 0.8em;}
+.dzj .dps span{float: left;}
+.dzj .dps .sp6{margin-right: 1em;margin-left: 1em;}
+
+.showpic{float: left;width:100%;}
+.showpic .swiper-container {width: 100%;height: 100%;}
+.showpic .swiper-container a{float: left;width:100%;}
+.showpic .swiper-container img{float:left;width: 100%;}
+
+.agm{float: left;width:100%;text-align: center;}
+.fwsm{float: left;width: 100%;font-size: 0.8em;background-color: #F5F5F5;padding: 0.5em 0em;margin: 0.5em 0em;}
+.fwsm div{margin: 0em 1em;color: #333;line-height: 1.5em;}
+
+.footer{float: left;width: 100%;text-align: center;font-size: 0.8em;margin-top: 1em;border-top: 1px solid #e5e5e5;padding: 1em 0em;}
+
+.ipj{float: left;width: 100%;font-size: 0.8em;border-bottom: 1px dotted #ccc;margin-top: 0.5em;padding-bottom: 0.5em;}
+.ipj .ip1{float: left;color: #333;}
+.ipj .ip2{float: left;width: 100%;text-align: justify;}
+#J_AttrUL li{float: left;width:100%;height:1.2em;overflow: hidden;margin: 0.5em 0px 0px 0px;vertical-align: top;color: #666;}
+.pxq{float: left;width: 100%;font-size: 0.8em;}
+.pxq img{float: left;width: 100%;}
+
+
