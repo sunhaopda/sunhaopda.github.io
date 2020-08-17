@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="反馈插件使用文档" />
+    <meta name="keywords" content="反馈插件" />
+    <link rel="shortcut icon" href="http://f3.baidu.com/feedback/images/doc/fb_title.png" type="image/x-icon" />
+    <title>Feedback Docs</title>
+
+    <link rel="stylesheet" type="text/css" href="http://f3.baidu.com/feedback/js/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://f3.baidu.com/feedback/js/bootstrap/css/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="http://f3.baidu.com/feedback/css/doc/feedback_doc.css" />
+
+
+    <script type="text/javascript" src="http://f3.baidu.com/feedback//js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://f3.baidu.com/feedback/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://f3.baidu.com/feedback/js/bootstrap/js/prettify.js"></script>
+    <script type="text/javascript" src="http://f3.baidu.com/feedback/js/feedback/ori_feedback0.0.2.js"></script>
+    <script>
+        var static_path = 'http://f3.baidu.com/feedback/';
+        var base_url_path = 'http://f3.baidu.com/index.php/feedback/';
+    </script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top ue-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="javascript:void(0)" class="navbar-brand">FBPlug Docs</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a class="doc_index" href="javascript:void(0)" target="_self">首页</a>
+                </li>
+                <li>
+                    <a class="doc_demo" href="javascript:void(0)" target="_self">演示</a>
+                </li>
+                <!-- <li>
+                    <a class="doc_down" href="javascript:void(0)" target="_self">下载</a>
+                </li>
+                <li>
+                    <a class="doc_other" href="javascript:void(0)" target="_self">api接口</a>
+                </li>
+                <li>
+                    <a href="http://fankui.baidu.com" target="_blank">官网</a>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="ue-docs-caption">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>百度反馈插件文档</h1>
+                <p>百度反馈插件，快速接入产品，完美数据定制，多种样式定制，兼容所有浏览器！</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container ue-docs-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="guidebar" class="ue-sidebar hidden-print"  data-spy="affix" data-offset-top="200" role="complementary">
+                <ul class="nav ue-sidenav">
+                    <li class="category active"><a href="javascript:void(0)">1. 开始使用</a>
+                        <ul class="nav">
+                            <li  class="active doc_introduct"><a path = "doc_introduct" href="javascript:void(0)">1.1 反馈插件简介和简单部署</a></li>
+                            <li class = "doc_join_step"><a path ="doc_join_step" href="javascript:void(0)">1.2 反馈插件申请步骤</a></li>
+                            <li class = "doc_join_asyn"><a path ="doc_join_asyn" href="javascript:void(0)">1.3 反馈插件异步接入</a></li>
+                        </ul>
+                    </li>
+                    <li class="category"><a href="javascript:void(0)">2. 数据定制</a>
+                        <ul class="nav">
+                            <li class = "doc_data_introduct"><a path ="doc_data_introduct" href="javascript:void(0)">2.1 数据定制功能介绍</a></li>
+                            <li class = "doc_data_how2"><a path ="doc_data_how2" href="javascript:void(0)">2.2 如何定制需要的数据</a></li>
+                            <li class = "doc_data_api"><a path ="doc_data_api" href="javascript:void(0)">2.3 数据定制api</a></li>
+                        </ul>
+                    </li>
+                    <li class="category"><a href="javascript:void(0)">3. 样式定制</a>
+                        <ul class="nav">
+                            <li class = "doc_style_introduct"><a path ="doc_style_introduct" href="javascript:void(0)">3.1 样式定制介绍</a></li>
+                            <li class = "doc_style_api"><a path ="doc_style_api" href="javascript:void(0)">3.2 定制样式api</a></li>
+                            <li class = "doc_introduct"><a path ="doc_style_more" href="javascript:void(0)">3.3 二次开发所有样式api</a></li>
+                        </ul>
+                    </li>
+                    <li class="category"><a href="javascript:void(0)">4. 常见问题</a>
+                        <ul class="nav">
+                            <li class = "doc_introduct"><a path ="doc_join_step" href="javascript:void(0)">4.1 反馈插件常用问题</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 ue-docs-main" role="main">
+            <div id="show">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var base_skip_dir = static_path+"template/zh_CN/doc/";
+
+    $(document).ready(function () {
+        //固定左边导航
+        $(window).on("scroll",function(){
+            if($(document).scrollTop()>168){
+                $("#guidebar").removeClass("affix-top");
+                $("#guidebar").addClass("affix");
+            }
+
+            if ($(document).scrollTop() < 168) {
+                $("#guidebar").removeClass("affix");
+                $("#guidebar").addClass("affix-top");
+            }
+        });
+
+         //加载默认页面
+        $("#show").load(base_skip_dir + "doc_introduct.html");
+
+        //导航栏的点击事件
+        $(".category li").on('click', function () {
+            skip_page($(this)[0].children[0].getAttribute("path"),$(this));
+        });
+
+        $(".doc_demo").on("click",function(){
+            window.location.href = base_url_path +"doc/demo";
+        });
+
+        $(".doc_down").on("click", function () {
+            window.location.href = base_url_path + "doc/down";
+        });
+
+        $(".doc_other").on("click", function () {
+            window.location.href = base_url_path + "doc/other";
+        });
+
+        $(".navbar-brand,.doc_index").on("click", function () {
+            window.location.href = base_url_path + "doc/index";
+        })
+    });
+
+    var skip_page = function(path,obj){
+        $(".ue-sidenav li .active").removeClass("active");
+        $(".ue-sidenav .active").removeClass("active");
+
+        obj.addClass("active");
+        obj.parent().parent().addClass("active");
+
+        var href = base_skip_dir + path+".html";
+        $("#show").load(href);
+    }
+
+</script>
+<!--26860003870913662730081722-->
+<script> var _trace_page_logid = 2686000387; </script><!--26859970760322626826081722-->
+<script> var _trace_page_logid = 2685997076; </script>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="content-type" content="text/html;charset=gbk" />
+<meta property="wb:webmaster" content="3aababe5ed22e23c" />
+<meta name="referrer" content="always" />
+<title>
+百度知道搜索_美将38家华为子公司列入实体清单
+</title>
+<link rel="shortcut icon" href="https://www.baidu.com/favicon.ico?t=20171027" type="image/x-icon" />
+<link rel="icon" sizes="any" mask href="https://www.baidu.com/img/baidu.svg" />
+
+<script>
+    window.alogObjectConfig = {
+        product: '102',
+        page: '102_5', 
+        monkey_page: 'zhidao-search',
+        speed_page: '5',
+        speed: {
+            sample: '0.05'
+        },
+        monkey: {
+            sample: '0.025'
+        },
+        exception: { 
+            sample: '0.025'
+        },
+        feature: {
+            sample: '0.025'
+        },
+        cus: {
+            sample: '0.025',
+            custom_metrics: ['c_sbox', 'c_menu']
+        },
+        csp: {
+            sample: '0.05',
+            'default-src': [
+                {match: '*bae.baidu.com', target: 'Accept,Warn'},
+                {match: '*.baidu.com,*.bdstatic.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com', target: 'Accept'},
+                {match: /^(127|172|192|10)(\.\d+){3}$/, target: 'Accept'},
+                {match: '*', target: 'Accept,Warn'}
+            ]
+        }
+    };
+ 
+    void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+    void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+
+<script>
+	!function(document, window){
+		var log = {
+			list: [],
+			host: 'https://' + location.host + '/api/httpscheck',
+			log: function(param) {
+				var a = [];
+		    	for(var k in param) {
+		    		a.push(k + '=' + param[k]);
+		    	}
+		    	var msg = a.join('&');
+		    	if(~this.list.indexOf(msg)){
+		    		return;
+		    	}
+		    	this.list.push(msg);
+		  		var img = new Image();
+		    	var key = '_ik_log_' + (Math.random()*2147483648 ^ 0).toString(36);
+		    	window[key] = img;
+		    		img.onload = img.onerror = img.onabort = function() {
+		        		img.onload = img.onerror = img.onabort = null;
+		        		window[key] = null;
+			    		img = null;
+		    	};
+		  		img.src = this.host + '?' + msg;
+			}
+		};
+
+		function HTTPSWarningLog(){
+			this.selector = [
+				'link',
+				'script',
+				'img',
+				'embed',
+				'iframe'
+			];
+			this.warningCounter = 0;
+			this.init();
+		};
+
+		HTTPSWarningLog.prototype = {
+			init: function(){
+				this.fetch();
+			},
+
+			fetch: function(){
+				for(var tags = this.selector, i =0, len = tags.length; i < len;i++) {
+					this.getTag(tags[i]);
+				}
+			},
+
+			getTag: function(tag) {
+				var domList = document.getElementsByTagName(tag);
+				if(!domList.length) {
+					return;
+				}
+				for(var i = 0,len = domList.length;i<len;i++) {
+					var el = domList[i];
+					var url = el.getAttribute(el.tagName==='LINK' ? 'href' : 'src');
+                    if(el.getAttribute('rel') === 'canonical') {
+                        continue;
+                    }
+					if(url && 'https:' === location.protocol && !url.indexOf('http:')){
+						this.sendLog(el, el.tagName.toLowerCase(),url);
+						this.warningCounter++;
+					}
+				}
+			},
+			
+			sendLog: function(el, type, url){
+				log.log({
+					url: location.href,
+					wtype: type,
+					wurl: url
+				});
+			}
+		};
+
+		function domReady(fn){
+		    if(document.addEventListener) {
+		        document.addEventListener('DOMContentLoaded', function() {
+		            document.removeEventListener('DOMContentLoaded',arguments.callee, false);
+		            fn();
+		        }, false);
+		    }else if(document.attachEvent) {
+		        document.attachEvent('onreadystatechange', function() {
+		            if(document.readyState == 'complete') {
+		                document.detachEvent('onreadystatechange', arguments.callee);
+		                fn();
+		            }
+		        });
+		    }
+		};
+
+		domReady(function(){
+			new HTTPSWarningLog();
+			for(var i=1; i<6; i++) {
+				!function(i){
+					setTimeout(function(){
+						new HTTPSWarningLog();
+					}, i*i*i*1000);
+				}(i);
+			}
+		});
+	}(document, window);
+</script>
+
+<link rel="canonical" href="http://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" />
+
+<script type="text/javascript">
+			!function(){var n={},t={};n.context=function(n,e){var i=arguments.length;if(i>1)t[n]=e;else if(1==i){if("object"!=typeof n)return t[n];for(var o in n)n.hasOwnProperty(o)&&(t[o]=n[o])}},"F"in window||(window.F=n)}();;
+			
+            
+																																							
+			F.context('user', {"isLogin":"","isRealName":"","stoken":"","name":"","imId":"","id":"","euid":"","wealth":"","gradeIndex":"","isMavin":""});
+			F.context('user')['internalAdmin'] = null;
+
+							F.context('defaultQuery', '{"title":"","value":""}');
+									
+			            F.context('isQuality', false);
+            F.context('now', 1597675901);
+		</script>
+<script>F.context('sysTaskAutoInit', 1);</script>
+<!--[if lte IE 8]>
+<script>
+                (function(){
+                    var e="abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+                    i=e.length;
+                    while(i--){document.createElement(e[i])}
+                 })();
+            </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/common/pkg/common.a227168.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/search/pkg/module.f248ef5.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/common/widget/header-metis/header.39c9ddf.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/common/widget/set-tag/set-tag.0b3a009.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/common/widget/task/task-last.fd038bd.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/search/widget/bottom-search-box/bottom-search-box.dfc8652.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/search/widget/lead-ps/lead-ps.38c447f.css" /><link rel="stylesheet" type="text/css" href="https://iknowpc.bdimg.com/static/search/widget/billboard/billboard.f9b1b35.css" /></head>
+
+<script> alog('speed.set', 'ht', +new Date()); </script>
+
+<body class="newsearch">
+
+
+
+<div class="head-wrap">
+<hr class="divider">
+<header id="header" class="container">
+
+<div id="search-box" class="search-box-new line ">
+<ul class="channel grid">
+<li><a log="sc_pos:c_baidu" data-type='baidu' rel="nofollow" href="http://www.baidu.com/s?cl=3&wd=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5"><i class="search-webpage-icon"></i>网页</a></li>
+<li><a log="sc_pos:c_news" data-type='news' rel="nofollow" href="https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&fr=zhidao"><i class="search-information-icon"></i>资讯</a></li>
+<li><a log="sc_pos:c_video" data-type='video' rel="nofollow" href="https://www.baidu.com/sf/vsearch?pd=video&tn=vsearch&wd=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&rsv_spt=16"><i class="search-video-icon"></i>视频</a></li>
+<li><a log="sc_pos:c_pic" data-type='image' rel="nofollow" href="http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&t=3&ie=gbk"><i class="search-image-icon"></i>图片</a></li>
+<li><strong><span><i class="search-zhidao-icon"></i>知道</span></strong></li>
+<li><a log="sc_pos:c_doc" data-type='wenku' rel="nofollow" href="http://wenku.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&lm=0&od=0"><i class="search-library-icon"></i>文库</a></li>
+<li><a log="sc_pos:c_tieba" data-type='tieba' rel="nofollow" href="http://tieba.baidu.com/f?kw=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&t=4"><i class="search-postbar-icon"></i>贴吧</a></li><li><a log="sc_pos:c_b2b" data-type='b2b' rel="nofollow" href="https://b2b.baidu.com/s?q=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&fr=www"><i class="search-purchase-icon"></i>采购</a></li>
+<li><a log="sc_pos:c_map" data-type='map' rel="nofollow" href="http://map.baidu.com/m?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&fr=map007"><i class="search-map-icon"></i>地图</a></li><li><a log="sc_pos:c_more" data-type="more" href="more/more.html">更多</a></li>
+</ul>
+<div class="search-block clearfix">
+<div class="search-cont clearfix">
+<a class="logo" href="https://zhidao.baidu.com/" title="百度知道"></a>
+<form action="https://zhidao.baidu.com/search" name="search-form" method="get" id="search-form-new" class="search-form">
+<input class="hdi" id="kw" maxlength="256" tabindex="1" size="46" name="word" value="美将38家华为子公司列入实体清单" autocomplete="off" placeholder="" />
+<button alog-action="g-search-anwser" type="submit" id="search-btn" hidefocus="true"  tabindex="2" class="btn-global">百度一下</button>
+<a href="search_13.htm#" alog-action="g-i-ask" class="i-ask-link" id="ask-btn-new">我要提问</a>
+</form>
+</div>
+
+<div id="userbar" class="userbar userbar-renew sfrom-search" data="">
+<ul class="aside-list">
+<li>
+<a href="http://www.baidu.com/" class="toindex">百度首页</a>
+</li>
+<li><a rel="nofollow" alog-alias="usrbar-login" href="javascript:;" id="userbar-login" log="type:2026,pname:account,mod:login,action:show,pos:pop">登录</a></li>
+<li><a rel="nofollow" alog-alias="usrbar-reg" id="userbar-reg" href="https://passport.baidu.com/v2/?reg&tpl=ik&color=green&u=" target="_blank">注册</a></li>
+<li class="shop-entrance">
+<a href="https://zhidao.baidu.com/shop" title="知道商城" log="type:2026,pos:top-right,target:shop-entrance">商城<i class="i-house" style="display: none;"></i></a>
+<span class="lucky-try" style="display: none"></span>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+<script>
+                    // 搜索框可用时间打点
+                    alog && alog('speed.set', 'c_sbox', +new Date); alog.fire && alog.fire("mark");
+                </script>
+
+</header>
+</div>
+<div id="body" class="container">
+
+<section id="page-main" class="page-main line">
+<div class="page-main-inner">
+
+
+<div class="line">
+<div class="list-wraper">
+<div class="list-header">
+
+<div id="wgt-picker" class="wgt-picker">
+<div class="picker-header">
+<span class="f-lighter lh-22">共99条结果</span>
+<div class="picker-date-search">
+<div class="picker-date-selected f-lighter" id="picker-btn">
+<span class="selected-text">
+全部</span>
+<i class="selected-icon"></i>
+</div>
+<ul class="picker-data-list">
+<li class="p-item"><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;lm=0&amp;site=-1&amp;sites=0&amp;date=0&amp;ie=gbk" data-log="pos:date,dt:0" class="p-item-active">全部</a></li>
+<li class="p-item"><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;lm=0&amp;site=-1&amp;sites=0&amp;date=2&amp;ie=gbk" data-log="pos:date,dt:2" class="">最近一周</a></li>
+<li class="p-item"><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;lm=0&amp;site=-1&amp;sites=0&amp;date=3&amp;ie=gbk" data-log="pos:date,dt:3" class="">最近一月</a></li>
+<li class="p-item"><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;lm=0&amp;site=-1&amp;sites=0&amp;date=4&amp;ie=gbk" data-log="pos:date,dt:4" class="">最近一年</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="wgt-iknow-special-business" data-type="business">
+<img class="official-icon" src="https://iknowpc.bdimg.com/static/search/widget/special/img/official_question.9363b90.png"></img>
+<div class="content">
+<a href="https://zhidao.baidu.com/business/profile?id=14857&role=business" target="_blank" class="specialPic special-imgurl">
+<img src="https://iknow-pic.cdn.bcebos.com/e850352ac65c1038953470bea2119313b07e8900?x-bce-process=image/resize,m_lfit,w_800,h_450,limit_1" border="0" />
+<i class="authentication" title="百度知道合伙人认证机构">
+<img src="data:image/png;base64,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">
+</i>
+</a>
+<div class="desc">
+<p class="mb-5">
+<a href="https://zhidao.baidu.com/business/profile?id=14857&role=business" class="special-name" target="_blank">华为终端客服</a>
+</p>
+<p class="desc-detail">
+<span>将每一次服务变成消费者温暖的回忆</span>
+<span class="line-split"></span>
+<span class="answer-num">39.8万回答</span>
+<span>196万赞</span>
+</p>
+<a href="https://zhidao.baidu.com/new?fix=%BB%AA%CE%AA%D6%D5%B6%CB%BF%CD%B7%FE&amp;targetEncodeUid=b3334069236f25705e7931ab&amp;id=14857" target="_blank" class="go-to-ask">向TA提问</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="list-inner">
+
+
+<div class="list" id="wgt-list" data-log-area="list">
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="89:333447824654608005">
+<dt class="dt mb-3 line" alog-alias="result-title-0">
+<a href="http://zhidao.baidu.com/question/333447824654608005.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:1,st:0"
+                target="_blank" class="ti">美国商务部将46<em>家华为</em>实体<em>列入实体清单</em>意味着什么？</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>8月19日晚间，美国商务部宣布将对华为的临时采购许可证延长90天，并决定将会把46<em>家华为</em>附属<em>公司</em>加入“<em>实体清单</em>”。目前在“<em>实体清单</em>”中已经有超过100<em>家华为</em>分<em>公司</em>。 华为<em>公司</em>发布声明称，华为反对美国商务部将另外46<em>家华为</em>实体<em>列入</em>“<em>实体清单</em>，美国...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-08-22</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=7ab44069236f25705e79c0f7" target="_blank" class="f-lighter nod" data-log="pos:un,si:1">jessi_xxx</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/333447824654608005.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:1">12个回答</a>
+</span>
+<span class="ml-10 f-grey">
+<i class="i-agree"></i>3
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="23:310958923187533524">
+<dt class="dt mb-3 line" alog-alias="result-title-1">
+<a href="http://zhidao.baidu.com/question/310958923187533524.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:2,st:0"
+                target="_blank" class="ti">美国<em>将华为列入实体清单</em>，“当时”给出的理由是什么...</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>说是<em>华为</em>设备设置了后门，威胁国家安全。</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-12-29</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=13b64069236f25705e798f13" target="_blank" class="f-lighter nod" data-log="pos:un,si:2">幻宇晨风</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/310958923187533524.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:2">1个回答</a>
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="22:1675135252927848627">
+<dt class="dt mb-3 line" alog-alias="result-title-2">
+<a href="http://zhidao.baidu.com/question/1675135252927848627.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:3,st:0"
+                target="_blank" class="ti">美国制裁华，<em>将华为列入实体清单</em>的理由是什么？（...</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>因为<em>华为</em>的迅猛发展已经让美国人感到恐惧，因为<em>华为</em>的5G技术让美国在此领域第一次落后，所以美国人以<em>华为</em>危害国家安全为由把<em>华为</em>列为<em>实体清单</em>，希望可以帮到你，谢谢</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-12-28</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=b8624069236f25705e79cbe7" target="_blank" class="f-lighter nod" data-log="pos:un,si:3">法布雷加舟</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/1675135252927848627.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:3">1个回答</a>
+</span>
+<span class="ml-10 f-grey">
+<i class="i-agree"></i>1
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="21:269441832911960525">
+<dt class="dt mb-3 line" alog-alias="result-title-3">
+<a href="http://zhidao.baidu.com/question/269441832911960525.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:4,st:0"
+                target="_blank" class="ti">结合美国<em>将华为列入实体清单</em>事件，你对制造业有哪...</a>
+</dt>
+<dd class="dd summary"><i class="i-answer-text">问：</i>100字就行，大神们帮帮忙</dd>
+<dd class="dd answer"><i class="i-answer-text">答：</i>制造业是国民经济的支柱产业。其产值能占gdp的一半以上。低端提升，高端突破。</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-06-12</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=33854069236f25705e79e2ab" target="_blank" class="f-lighter nod" data-log="pos:un,si:4">a屠龙209</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/269441832911960525.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:4">3个回答</a>
+</span>
+<span class="ml-10 f-grey">
+<i class="i-agree"></i>1
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="19:751313605276332732">
+<dt class="dt mb-3 line" alog-alias="result-title-4">
+<a href="http://zhidao.baidu.com/question/751313605276332732.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:5,st:0"
+                target="_blank" class="ti">你怎么样看待美国政府封锁<em>华为公司</em>并将其列为<em>实体</em>...</a>
+</dt>
+<dd class="dd summary"><i class="i-answer-text">问：</i>无</dd>
+<dd class="dd answer"><i class="i-answer-text">答：</i>注意几个细节， 1、美国“制裁”的这几个企业，无人机里边的大疆的芯片用的海思的。 2、我国监控企业世界牛逼，海康大华在整个监控行业的芯片基本用的也都是海思，海思能占到市场7成以上的份额。 3、那么制裁<em>华为</em>就更不用说了，川普给的理由是威胁...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-05-24</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=b9704069236f25705e795608" target="_blank" class="f-lighter nod" data-log="pos:un,si:5">聊大教育学院</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/751313605276332732.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:5">2个回答</a>
+</span>
+<span class="ml-10 f-grey">
+<i class="i-agree"></i>9
+</span>
+</dd>
+</dl>
+<script>
+            void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+        </script>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="12:943627265496625332">
+<dt class="dt mb-3 line" alog-alias="result-title-5">
+<a href="http://zhidao.baidu.com/question/943627265496625332.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:6,st:0"
+                target="_blank" class="ti"><em>华为</em>被美国商务部<em>列入实体清单</em>不能使用美国<em>公司</em>的...</a>
+</dt>
+<dd class="dd summary"><i class="i-answer-text">问：</i>你谷歌不就是在垄断吗？中国为什么不能以牙还牙，禁用谷歌？理由很简单...</dd>
+<dd class="dd answer"><i class="i-answer-text">答：</i>2010年3月23日3时3分，谷歌高级副总裁、首席法律官大卫·德拉蒙德公开发表声明，宣布谷歌关闭在中国大陆市场搜索服务，并将搜索服务由中国内地转至香港。</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2020-05-05</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=acda4069236f25705e79890e" target="_blank" class="f-lighter nod" data-log="pos:un,si:6">沁紫幻梦</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/943627265496625332.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:6">1个回答</a>
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="9:1518116246959277620">
+<dt class="dt mb-3 line" alog-alias="result-title-6">
+<a href="http://zhidao.baidu.com/question/1518116246959277620.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:7,st:0"
+                target="_blank" class="ti">合肥的洗衣机美菱为什么被美国<em>列入实体清单</em>？</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>美国商务部工业和安全局（BIS）宣布将33家中国公司及机构列入&ldquo;实体清单&rdquo;之后，美国BIS又宣布将11家中国<em>公司列入实体清单</em>。但是，有一家公司超乎人们的意料，他就是合肥的美菱公司，竟然也被美国列入了实体名单，其最主要的原因是他...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2020-08-15</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=0c8b4069236f25705e7912cc" target="_blank" class="f-lighter nod" data-log="pos:un,si:7">宫本武藏鲁班</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/1518116246959277620.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:7">5个回答</a>
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="13:430933397186015572">
+<dt class="dt mb-3 line" alog-alias="result-title-7">
+<a href="http://zhidao.baidu.com/question/430933397186015572.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:8,st:0"
+                target="_blank" class="ti">为什么<em>华为</em>表示不怕美国的<em>实体清单</em>？</a>
+</dt>
+<dd class="dd summary"><i class="i-answer-text">问：</i>华为背后的技术到底有多强大？</dd>
+<dd class="dd answer"><i class="i-answer-text">答：</i>随着科技的发展，智能手机也开始越来越普及了，我们生活的方方面面都开始和手机联系起来，社会也越来越智能化了。而近些年，<em>华为</em>作为中国智能手机发展劲头大好的代表之一，开始越来越多的出现在了大众的视野中。或许也正是因为知名度太高的原因...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-07-02</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=0ff64069236f25705e790873" target="_blank" class="f-lighter nod" data-log="pos:un,si:8">偏不起名great</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/430933397186015572.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:8">10个回答</a>
+</span>
+</dd>
+</dl>
+<dl class="dl" data-fb="pos:dt>a,type:normal" data-rank="3:183706152336022044">
+<dt class="dt mb-3 line" alog-alias="result-title-8">
+<a href="http://zhidao.baidu.com/question/183706152336022044.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:9,st:0"
+                target="_blank" class="ti"><em>美将</em>11家中国<em>实体列入</em>出口管制，中方态度如何？</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>随着国际形势的变化，中美关系也变得十分微妙。两个国家都是国际上排名前二经济体，往来贸易十分频繁，可是美国却将中国11<em>家实体列入</em>出口管制，中方态度坚决维护本国企业利益。事实上，这已经不是美国第一次任意妄为了，不久之前，美国对<em>华为</em>进...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2020-08-10</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=c4154069236f25705e798b55" target="_blank" class="f-lighter nod" data-log="pos:un,si:9">萌萌哒DE鹿八岁</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/183706152336022044.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:9">1个回答</a>
+</span>
+</dd>
+</dl>
+<dl class="dl dl-last" data-fb="pos:dt>a,type:normal" data-rank="5:687377156858724412">
+<dt class="dt mb-3 line" alog-alias="result-title-9">
+<a href="http://zhidao.baidu.com/question/687377156858724412.html?fr=iks&word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&ie=gbk" 
+                data-log="fm:as,pos:ti,si:10,st:0"
+                target="_blank" class="ti"><em>列入实体</em>名单什么意思？</a>
+</dt>
+<dd class="dd answer"><i class="i-answer-text">答：</i>所谓“<em>实体清单</em>”是美国为维护其国家安全利益，作为出口管制的一个重要手段。实体名单于1997 年2 月由商务部首次发布，被认为参与扩散活动的最终用户都进入榜单，以此明确告知出口商，在未得到许可证时，不得帮助这些实体获取受本条例管辖的任何物...</dd><dd class="dd explain f-lighter" alog-group="result-userinfo">
+<span class="mr-7">2019-05-18</span>
+<span class="mr-8">
+回答者:&nbsp;<a href="https://zhidao.baidu.com/usercenter?uid=14964069236f25705e791207" target="_blank" class="f-lighter nod" data-log="pos:un,si:10">abram海</a>
+</span>
+<span class="mr-8">
+<a href="http://zhidao.baidu.com/question/687377156858724412.html" target="_blank" class="f-lighter nod" data-log="pos:ans,si:10">4个回答</a>
+</span>
+<span class="ml-10 f-grey">
+<i class="i-agree"></i>372
+</span>
+</dd>
+</dl>
+</div>
+
+
+</div>
+<div class="list-footer">
+
+
+<div id="lead-ps" class="f-14 line lead-ps" data-log-area="leadps" data-log-event="mousedown">
+<div>
+<div class="c-container">
+<div class="rw-title">相关搜索</div>
+<div class="c-row">
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=列入出口管制实体清单&rsv_dl=0_cont_wz_0&rsf=64090480&tn=SE_PcZhidaoqwyss_e1nmnxgw'">列入出口管制实体清单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=实体清单和未证实名单&rsv_dl=0_cont_wz_1&rsf=63090448&tn=SE_PcZhidaoqwyss_e1nmnxgw'">实体清单和未证实名单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=理财子公司清单&rsv_dl=0_cont_wz_2&rsf=63090224&tn=SE_PcZhidaoqwyss_e1nmnxgw'">理财子公司清单</a>
+</span>
+</div>
+<div class="c-row">
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=中兴通讯子公司清单&rsv_dl=0_cont_wz_3&rsf=63090224&tn=SE_PcZhidaoqwyss_e1nmnxgw'">中兴通讯子公司清单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=子公司管控清单&rsv_dl=0_cont_wz_4&rsf=63090224&tn=SE_PcZhidaoqwyss_e1nmnxgw'">子公司管控清单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=子公司权力清单&rsv_dl=0_cont_wz_5&rsf=63090224&tn=SE_PcZhidaoqwyss_e1nmnxgw'">子公司权力清单</a>
+</span>
+</div>
+<div class="c-row">
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=被列入实体名单&rsv_dl=0_cont_wz_6&rsf=63090352&tn=SE_PcZhidaoqwyss_e1nmnxgw'">被列入实体名单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=美国实体清单&rsv_dl=0_cont_wz_7&rsf=63090448&tn=SE_PcZhidaoqwyss_e1nmnxgw'">美国实体清单</a>
+</span>
+<span class="c-span4 c-line-clamp1 rw-item">
+<a onclick="window.location.href='http://www.baidu.com/s?pc=1&word=分公司和子公司的区别&rsv_dl=0_cont_wz_8&rsf=62090096&tn=SE_PcZhidaoqwyss_e1nmnxgw'">分公司和子公司的区别</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<aside class="aside fixheight">
+<div class="aside-inner">
+
+
+
+<div style="width: 100%;">
+<div id="right-billboard">
+<div class="billboard-head">
+<div class="billboard-title" id="billboard-head-log-target">
+<a target="_blank" href="http://www.baidu.com/link?url=QezZHUFL28wX6ffD2dDGnrZJOKp8gHRRWvNm-cioX5qU5Ke4sCCgF3dVJLVKzPNQ" ref="noopener noreferrer">百度热榜</a>
+</div>
+<span class="billboard-reload">
+<span class="billboard-icon reload-icon mr-5"></span>
+换一换</span>
+</div>
+<ul class="billboard-list" id="billboard-log-target"></ul>
+</div>
+<script type="text/html" id="t:billboard-list">
+    <#for(var i = 0; i < data.length; i++){#>
+        <li class="billboard-item">
+            <span class="item-info">
+                <span class="item-index">
+                    <span class="item-index-num item-index-<#=data[i].itemIndex#>"><#=data[i].itemIndex#></span>
+                </span>
+        	    <a href="https://www.baidu.com/baidu?word=<#:=encodeURIComponent(data[i].keyword)#>&rsv_dl=fyb_n_zhidaojs" ref="noopener noreferrer" target="_blank" class="item-title"><#=data[i].keyword#></a>
+            </span>
+        	<span class="item-num">
+        		<span><#=data[i].searchesNum#></span>
+        	</span>
+        </li>
+    <#}#>
+</script>
+
+</div>
+
+
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+</div>
+
+
+
+
+
+
+<div class="search-body-end">
+
+<div class="widget-pager clearfix">
+<div class="pager" alog-alias="pager">
+<b>1</b><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=10">2</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=20">3</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=30">4</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=40">5</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=50">6</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=60">7</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=70">8</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=80">9</a><a href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=90">10</a><a class="pager-next" href="https://zhidao.baidu.com/search?word=%C3%C0%BD%AB38%BC%D2%BB%AA%CE%AA%D7%D3%B9%AB%CB%BE%C1%D0%C8%EB%CA%B5%CC%E5%C7%E5%B5%A5&amp;ie=gbk&amp;site=-1&amp;sites=0&amp;date=0&amp;pn=10">下一页&gt;</a>
+</div>
+</div>
+
+<div id="footer-help" class="footer-help">
+<a target="_blank" rel="nofollow" href="http://help.baidu.com/question?prod_id=9&class=337">帮助</a>
+<a target="_blank" rel="nofollow" href="http://help.baidu.com/newadd?prod_id=9&category=1">举报</a>
+<a target="_blank" rel="nofollow" href="javascript:;" id="footer-feedback">用户反馈</a>
+<a rel="nofollow" href="http://help.baidu.com/question?prod_id=9&class=325&id=2760" target="_blank">知道协议</a>
+</div>
+</div>
+
+
+
+<script>
+    void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+
+<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?6859ce5aaf00fb00387e6434e4fcc925";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+			</script>
+
+<script type="text/javascript"> window.tt = 1597675901;</script>
+</body><script type="text/javascript" src="https://iknowpc.bdimg.com/static/common/lib/mod.75d1f98.js"></script><script nonce="" type="text/javascript">(window.__IKNOW_GLOBAL__ || window).require.resourceMap({"res":{"common:widget\/lib\/jquery\/jquery.origin.js":{"pkg":"common:p3"},"common:widget\/js\/util\/https\/https.js":{"pkg":"common:p6"},"common:widget\/bottom-ask\/bottom-ask.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/util\/log\/log.js"]},"common:widget\/css\/fonts\/iconfont.js":{"pkg":"common:p0"},"common:widget\/css\/fonts\/iconfont.min.js":{"pkg":"common:p0"},"common:widget\/footer-new\/footer-new.js":{"pkg":"common:p0","deps":["common:widget\/lib\/jquery\/jquery.js","common:widget\/js\/util\/event\/event.js"]},"common:widget\/footer\/footer.js":{"pkg":"common:p0"},"common:widget\/header-metis\/header.js":{"pkg":"common:p0","deps":["common:widget\/lib\/jquery\/jquery.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/ui\/scrollbar-new\/scrollbar-new.js","common:widget\/js\/util\/store\/store.js"]},"common:widget\/menu\/menu.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"common:widget\/search-box-new\/search-box-new.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/ui\/suggestion-new\/suggestion-new.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/util\/form\/form.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/lib\/jquery.placeholder\/jquery.placeholder.js"]},"common:widget\/set-tag\/set-tag.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/ui\/scrollbar\/scrollbar.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/lib\/jquery.ui\/jquery.ui.sortable.js"]},"common:widget\/task\/task-last.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/util\/https\/https.js","common:widget\/js\/ui\/pop-tip\/pop-tip.js"]},"common:widget\/userbar-renew\/userbar-renew.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/logic\/login\/login.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/util\/store\/store.js"]},"search:widget\/js\/file\/file.js":{"url":"https:\/\/iknowpc.bdimg.com\/static\/search\/widget\/js\/file\/file.c888dbd.js","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/suffix-str\/suffix-str.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/logic\/login\/login.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/logic\/submit\/submit.js","common:widget\/js\/util\/template\/template.js"]},"search:widget\/js\/ck\/ck.js":{"pkg":"search:p0","deps":["common:widget\/lib\/jquery\/jquery.js"]},"common:widget\/js\/logic\/tip-template\/tipTemplate.es.js":{"pkg":"common:p5","deps":["common:widget\/lib\/jquery\/jquery.js"]},"common:widget\/js\/logic\/usergrade\/threshold.es.js":{"pkg":"common:p5"},"common:widget\/js\/logic\/usergrade\/gradedata.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/logic\/usergrade\/threshold.es.js"]},"common:widget\/js\/ui\/newDialog\/newDialog.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/util\/tangram\/tangram.js"]},"common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js":{"pkg":"common:p5"},"common:widget\/js\/ui\/v-flash\/js\/flash.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js"]},"common:widget\/js\/util\/domToImage\/dom-to-image.es.js":{"pkg":"common:p5"},"common:widget\/js\/util\/monitor\/monitor.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/util\/log\/log.js"]}},"pkg":{"common:p0":{"url":"https:\/\/iknowpc.bdimg.com\/static\/common\/pkg\/more.886f2f9.js","has":["common:widget\/bottom-ask\/bottom-ask.js","common:widget\/css\/fonts\/iconfont.js","common:widget\/css\/fonts\/iconfont.min.js","common:widget\/footer-new\/footer-new.js","common:widget\/footer\/footer.js","common:widget\/header-metis\/header.js","common:widget\/menu\/menu.js","common:widget\/search-box-new\/search-box-new.js","common:widget\/set-tag\/set-tag.js","common:widget\/task\/task-last.js","common:widget\/userbar-renew\/userbar-renew.js"]},"common:p5":{"url":"https:\/\/iknowpc.bdimg.com\/static\/common\/pkg\/esmod.009f40a.js","has":["common:widget\/js\/logic\/tip-template\/tipTemplate.es.js","common:widget\/js\/logic\/usergrade\/threshold.es.js","common:widget\/js\/logic\/usergrade\/gradedata.es.js","common:widget\/js\/ui\/newDialog\/newDialog.es.js","common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js","common:widget\/js\/ui\/v-flash\/js\/flash.es.js","common:widget\/js\/util\/domToImage\/dom-to-image.es.js","common:widget\/js\/util\/monitor\/monitor.es.js"]}}});</script><script type="text/javascript" src="https://iknowpc.bdimg.com/static/common/pkg/lib.33719ed.js"></script><script type="text/javascript" src="https://iknowpc.bdimg.com/static/common/pkg/commonjs.3155397.js"></script><script type="text/javascript" src="https://iknowpc.bdimg.com/static/search/pkg/module.8f3183c.js"></script><script type="text/javascript" src="https://iknowpc.bdimg.com/static/search/widget/billboard/billboard.f1de53a.js"></script><script nonce="" type="text/javascript">
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;			window['__abbaidu_2016_subidgetf'] = function () {
+                var currentUrlArray = window.location.href.split("//");
+                var start = currentUrlArray[1].indexOf("/");
+                if (start == -1) {
+                    return 'iknow-pc-home';
+				}
+                var currentPath = currentUrlArray[1].substring(start);
+                if(currentPath.indexOf("?") != -1) {
+                    currentPath = currentPath.split("?")[0];
+                }
+                if (currentPath == "/") {
+                    return 'iknow-pc-home';
+				}
+				if (currentPath.indexOf("/question") === 0) {
+					return 'iknow-pc-qb';
+				}
+				if (currentPath.indexOf("/search") === 0) {
+					return 'iknow-pc-search';
+				}
+				return 'iknow-pc-other';
+			}
+			window['__abbaidu_2016_cb'] = function (responseData) {
+                try {
+                    var respJSON = JSON.parse(responseData);
+
+                    var d = new Date();
+                    d.setTime(d.getTime()+(60*60*1000));
+                    var expires = "expires="+d.toGMTString();
+                    document.cookie = 'shitong_key_id=' + respJSON.key_id + '; ' + expires + '; path=/';
+                    document.cookie = 'shitong_data=' + respJSON.data + '; ' + expires + '; path=/';
+                    document.cookie = 'shitong_sign=' + respJSON.sign + '; ' + expires + '; path=/';
+                } catch (err) {
+                }
+   			};
+		}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    F.context('sfrom', 'search');
+    require.async(['common:widget/userbar-renew/userbar-renew']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['common:widget/search-box-new/search-box-new']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;      F.context('samplingAll', {"search_50per":["2"],"search_20per":["5"],"search_10per":["9"],"search_5per":["18"],"samplowVal":"868","qb_revision_ecom":[""],"aspluAds":["2"],"qb_knowledgeAds":["2"]});
+  }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;  require.async(['search:widget/results/picker/picker'], function(P){P.init();});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;  require.async(['search:widget/special/special']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;  require.async(['search:widget/results/list/list']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['search:widget/billboard/billboard'], function(B) {
+    	B.init();
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['search:widget/js/dom-ready/dom-ready'], function(D){	
+      // 检索结果页接入dp平台domready打点
+      alog('speed.set', 'drt', +new Date);
+      
+      D.init({"logConfig":{"ssid":"3100632533","pn":"0","wd":"\u7f8e\u5c0638\u5bb6\u534e\u4e3a\u5b50\u516c\u53f8\u5217\u5165\u5b9e\u4f53\u6e05\u5355","tc":"108","nsma":"2","asp_new_graphic_ad":"nonw"},"tcConfig":{"swf":{"open":"0"}}});	
+    });
+	}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require('common:widget/js/logic/ie-prompt/ie-prompt');
+    require.async(['common:widget/footer-new/footer-new'], function(footer) {
+        footer.init();
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;								                																	require.async(['common:widget/js/logic/dom-ready/dom-ready'], function(D){ D.init({"isNotPgc":"1"}) });
+            }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;        require.async(["common:widget/js/logic/duration/duration"],function(dur){
+            dur.init();
+        });
+    }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;			require.async(['common:widget/js/util/monitor/monitor.es'], function(m) {
+				m.monitor && m.monitor.init();
+			});
+		}();
+</script>
+<script type="text/javascript">
+    require.async(['common:widget/lib/jquery/jquery'], function ($) {
+        if (!/chrome|firefox|safari|msie 10|rsv:11|msie [89]/i.test(navigator.userAgent)) {
+            return;
+        }
+
+        window.BaiduHttps = window.BaiduHttps || {};
+        window.BaiduHttps.callbacks = function (data) {
+            if (data && data.s === 0) {
+                window.supportHttps = 1;
+                setTimeout(function () {
+                    $('a[href^="http://www.baidu.com/s?"]').each(function (index, item) {
+                        var link = $(item).attr('href');
+                        if (~link.indexOf('?wd=') || ~link.indexOf('&wd=')) {
+                            link = link.replace(/^http/, 'https');
+                            $(item).attr('href', link);
+                        }
+                    });
+                }, 2000);
+            }
+        };
+
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://www.baidu.com/con?from=zhidao';
+        document.body.appendChild(script);
+    });
+</script>
+
+
+<script async="" src="https://dlswbr.baidu.com/heicha/mw/abclite-2016-s.js"></script>
+
+
+</html>

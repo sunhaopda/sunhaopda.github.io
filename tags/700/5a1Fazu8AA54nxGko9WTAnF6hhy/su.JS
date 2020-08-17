@@ -1,0 +1,1 @@
+window.baidu.sug({q:"",p:,s:[]});
