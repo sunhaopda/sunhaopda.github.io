@@ -45,7 +45,7 @@ label{
 }
 .header ul li {
     display: inline-block;
-    width: 49.7%;
+    width: 24.5%;
     text-align: center;
     color: #fff;
     font-size: 13px;
