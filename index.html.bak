@@ -105,19 +105,21 @@
 											<li><a href="mens.html">YEEZY700</a></li>
 											<li><a href="mens.html">Air Jordan</a></li>
 											<li><a href="mens.html">Nike</a></li>
-											<li><a href="mens.html">Dior</a></li>
-											<li><a href="mens.html">Timberland</a></li>
+											<!--<li><a href="mens.html">Dior</a></li>
+											<li><a href="mens.html">Timberland</a></li>-->
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Jewellery</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
+											<li><a href="mens.html">New Balance</a></li>
+											<li><a href="mens.html">Converse</a></li>
 											<li><a href="mens.html">Perfumes</a></li>
-											<li><a href="mens.html">Beauty</a></li>
+											<li><a href="mens.html">Dior</a></li>
+											<li><a href="mens.html">Timberland</a></li>
+											<!--<li><a href="mens.html">Beauty</a></li>
 											<li><a href="mens.html">Shirts</a></li>
 											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Swimwear</a></li>
+											<li><a href="mens.html">Swimwear</a></li>-->
 										</ul>
 									</div>
 									<div class="clearfix"></div>
