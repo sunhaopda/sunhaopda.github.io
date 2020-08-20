@@ -22,8 +22,23 @@
 <div class="header" id="home">
 	<div class="container">
 		<ul>
-		    <li> <a><!--<a href="#" data-toggle="modal" data-target="#myModal"--><i class="fa fa-weixin" aria-hidden="true"></i> gfdhggh </a></li>
-			<li> <i class="fa fa-phone" aria-hidden="true"></i> Call : 13114908861</li>
+		    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<li> <a><!--<a href="#" data-toggle="modal" data-target="#myModal"--><i class="fa fa-weixin" aria-hidden="true"></i><span id="btn" data-clipboard-text="gfdhggh">gfdhggh</span><<点击复制
+<div id="show" style="display: none;">已复制</div>
+<script>
+	var btn=document.getElementById('btn');
+	var clipboard=new Clipboard(btn);
+	clipboard.on('success', function(e){
+		$('#show').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+	clipboard.on('error', function(e){
+		$('#show').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+</script></a></li>
+			<li> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:13114908861" >Call : 13114908861 </li>
 			<!--<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>-->
 			<!--<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>-->
 		</ul>
@@ -395,7 +410,7 @@
 		 </div> 
     </div>
 	<!-- schedule-bottom -->
-	<div class="schedule-bottom">
+	<!--<div class="schedule-bottom">
 		<div class="col-md-6 agileinfo_schedule_bottom_left">
 			<img src="images/mid.jpg" alt=" " class="img-responsive" />
 		</div>
@@ -423,7 +438,7 @@
 			</div>
 		</div>
 		<div class="clearfix"> </div>
-	</div>
+	</div>-->
 <!-- //schedule-bottom -->
   <!-- banner-bootom-w3-agileits -->
 	<div class="banner-bootom-w3-agileits">
@@ -436,8 +451,8 @@
 					<figure class="effect-roxy">
 							<img src="images/bb1.jpg" alt=" " class="img-responsive" />
 							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 55%</p>
+								<!--<h3><span>S</span>ale </h3>
+								<p>Upto 55%</p>-->
 							</figcaption>			
 						</figure>
 			    </div>
@@ -449,8 +464,8 @@
 			           <figure class="effect-roxy">
 							<img src="images/bottom3.jpg" alt=" " class="img-responsive" />
 							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 55%</p>
+								<!--<h3><span>S</span>ale </h3>
+								<p>Upto 55%</p>-->
 							</figcaption>			
 						</figure>
 		        </div>
@@ -460,8 +475,8 @@
 						<figure class="effect-roxy">
 							<img src="images/bottom4.jpg" alt=" " class="img-responsive">
 							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 65%</p>
+								<!--<h3><span>S</span>ale </h3>
+								<p>Upto 65%</p>-->
 							</figcaption>		
 						</figure>
 					</div>
@@ -473,17 +488,17 @@
 <!--/grids-->
       <div class="agile_last_double_sectionw3ls">
             <div class="col-md-6 multi-gd-img multi-gd-text ">
-					<a href="womens.html"><img src="images/bot_1.jpg" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
+					<a href="womens.html"><img src="images/bot_1.jpg" alt=" "><!--h4>Flat <span>50%</span> offer</h4--></a>
 					
 			</div>
 			 <div class="col-md-6 multi-gd-img multi-gd-text ">
-					<a href="womens.html"><img src="images/bot_2.jpg" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
+					<a href="womens.html"><img src="images/bot_2.jpg" alt=" "><!--h4>Flat <span>50%</span> offer</h4--></a>
 			</div>
 			<div class="clearfix"></div>
 	   </div>							
 <!--/grids-->
 <!-- /new_arrivals --> 
-	<div class="new_arrivals_agile_w3ls_info"> 
+	<!--<div class="new_arrivals_agile_w3ls_info"> 
 		<div class="container">
 		    <h3 class="wthree_text_info">New <span>Arrivals</span></h3>		
 				<div id="horizontalTab">
@@ -495,7 +510,7 @@
 						</ul>
 					<div class="resp-tabs-container">
 					<!--/tab_one-->
-						<div class="tab1">
+<!--						<div class="tab1">
 							<div class="col-md-3 product-men">
 								<div class="men-pro-item simpleCart_shelfItem">
 									<div class="men-thumb-item">
@@ -812,7 +827,7 @@
 						</div>
 						<!--//tab_one-->
 						<!--/tab_two-->
-						<div class="tab2">
+<!--						<div class="tab2">
 							 <div class="col-md-3 product-men">
 								<div class="men-pro-item simpleCart_shelfItem">
 									<div class="men-thumb-item">
@@ -1128,7 +1143,7 @@
 							<div class="clearfix"></div>
 						</div>
 					 <!--//tab_two-->
-						<div class="tab3">
+<!--						<div class="tab3">
 								
 						<div class="col-md-3 product-men">
 								<div class="men-pro-item simpleCart_shelfItem">
@@ -1763,7 +1778,7 @@
 					</div>
 				</div>	
 			</div>
-		</div>
+		</div>-->
 	<!-- //new_arrivals --> 
 	<!-- /we-offer -->
 		<div class="sale-w3ls">
