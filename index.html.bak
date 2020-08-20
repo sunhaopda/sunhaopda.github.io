@@ -22,7 +22,8 @@
 <div class="header" id="home">
 	<div class="container">
 		<ul>
-		    
+		    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 			<li> <a><!--<a href="#" data-toggle="modal" data-target="#myModal"--><i class="fa fa-weixin" aria-hidden="true"></i><span id="btn" data-clipboard-text="gfdhggh">gfdhggh</span><<点击复制
 <div id="show" style="display: none;">已复制</div>
 <script>
