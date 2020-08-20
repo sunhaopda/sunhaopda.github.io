@@ -315,7 +315,7 @@
 			<div class="item active"> 
 				<div class="container">
 					<div class="carousel-caption">
-						<h3>店长 <span>精选</span></h3>
+						<h3>走在潮流 <span>尖端</span></h3>
 						<p>优质鞋款入手推荐</p>
 						<a class="hvr-outline-out button2" href="mens.html">Shop Now </a>
 					</div>
@@ -342,7 +342,7 @@
 			<div class="item item4"> 
 				<div class="container">
 					<div class="carousel-caption">
-						<h3>走在潮流 <span>尖端</span></h3>
+						<h3>店长 <span>精选</span></h3>
 						<p>精选当下热卖球鞋</p>
 						<a class="hvr-outline-out button2" href="mens.html">Shop Now </a>
 					</div>
@@ -376,8 +376,8 @@
 						<figure class="effect-roxy">
 							<img src="images/bottom1.jpg" alt=" " class="img-responsive" />
 							<figcaption>
-								<h3><span>F</span>all Ahead</h3>
-								<p>New Arrivals</p>
+								<h3><span>20</span>年经验积累</h3>
+								<p>专        业</p>
 							</figcaption>			
 						</figure>
 					</div>
@@ -385,8 +385,8 @@
 						<figure class="effect-roxy">
 							<img src="images/bottom2.jpg" alt=" " class="img-responsive" />
 							<figcaption>
-								<h3><span>F</span>all Ahead</h3>
-								<p>New Arrivals</p>
+								<h3><span>领先</span>技术支持</h3>
+								<p>高        效</p>
 							</figcaption>			
 						</figure>
 					</div>
