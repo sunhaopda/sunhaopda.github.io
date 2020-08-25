@@ -98,7 +98,7 @@
 								<div class="agile_inner_drop_nav_info">
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="canadagoose.html">Canada Goose</a></li>
+											<li><a href="cg.html">Canada Goose</a></li>
 											<li><a href="mk.html">剪刀</a></li>
 										</ul>
 									</div>
@@ -133,7 +133,7 @@
 						<div class="agile_inner_breadcrumb">
 
 						   <ul class="w3_short">
-								<li><a href="index.html">Home</a><i>|</i></li>
+								<li><a href="index.html">主页</a><i>|</i></li>
 								<li>YEEZY 350</li>
 							</ul>
 						 </div>
@@ -623,11 +623,12 @@
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a><span>M</span>amba潮流制造 </a></h2>
+			<h2><a><span>M</span>amba潮流制造</a></h2>
 			<p>外单 批发 实体 深度合作
-			24小时在线.</p>
+			24小时在线</p>
 			<ul class="social-nav model-3d-0 footer-social w3_agile_social two">
-															<li><a class="facebook">
+															<li>
+																<a href="weixin://" class="facebook">
 																  <div class="front"><i class="fa fa-weixin" aria-hidden="true"></i></div>
 																  <div class="back"><i class="fa fa-weixin" aria-hidden="true"></i></div></a></li>
 															<li><a href="tel:13114908861" class="twitter"> 
@@ -636,7 +637,7 @@
 														</ul>
 		</div>
 		<div class="col-md-9 footer-right">
-			<div class="sign-grds">		
+			<div class="sign-grds">
 				<div class="col-md-5 sign-gd-two">
 					<h4>联系 <span>我们</span></h4>
 					<div class="w3-address">
@@ -646,7 +647,7 @@
 							</div>
 							<div class="w3-address-right">
 								<h6>联系电话</h6>
-								<p>+86 131 1490 8861</p>
+								<a href="tel:13114908861">+86 131 1490 8861</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -656,7 +657,7 @@
 							</div>
 							<div class="w3-address-right">
 								<h6>地址</h6>
-								<p>福建·莆田
+								<p>福建·莆田 
 								
 								</p>
 							</div>
@@ -664,74 +665,11 @@
 						</div>
 					</div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-<!-- //footer -->
 
-<!-- login -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-bottom">
-										<h3>Sign up for free</h3>
-										<form>
-											<div class="sign-up">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-up">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<h4>Re-type Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<input type="submit" value="REGISTER NOW" >
-											</div>
-											
-										</form>
-									</div>
-									<div class="login-right">
-										<h3>Sign in with your account</h3>
-										<form>
-											<div class="sign-in">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-in">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												<a href="#">Forgot password?</a>
-											</div>
-											<div class="single-bottom">
-												<input type="checkbox"  id="brand" value="">
-												<label for="brand"><span></span>Remember Me.</label>
-											</div>
-											<div class="sign-in">
-												<input type="submit" value="SIGNIN" >
-											</div>
-										</form>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- //login -->
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
