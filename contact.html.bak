@@ -164,7 +164,7 @@
 	 </div>
 	   <div class="contact-w3-agile1 map" data-aos="flip-right">
 			
-		   <iframe src="https://map.baidu.com/search/%E8%8E%86%E7%94%B0%E5%B8%82/@13248780,2913800.75,13z?querytype=s&da_src=shareurl&wd=%E8%8E%86%E7%94%B0&c=332&src=0&pn=0&sug=0&l=12&b=(12986004.58,4678418.67;13108884.58,4736594.67)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" class="map" style="border:0" allowfullscreen=""></iframe>
+		   <iframe src="map.html" frameBorder=0 height=600 width=500 scrolling=no></iframe>
 	   </div>
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
