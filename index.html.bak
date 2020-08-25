@@ -40,13 +40,6 @@
 </div>
 <div class="header-bot">
 	<div class="header-bot_inner_wthreeinfo_header_mid">
-		<div class="col-md-4 header-middle">
-			<form action="#" method="post">
-					<input type="search" name="search" placeholder="Search here..." required="">
-					<input type="submit" value=" ">
-				<div class="clearfix"></div>
-			</form>
-		</div>
 			<div class="col-md-4 logo_agile">
 				<h1> <a><span>M</span>amba潮流制造 
 				</a></h1>
