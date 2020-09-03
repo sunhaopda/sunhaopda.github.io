@@ -109,7 +109,7 @@
 										</ul>
 									</div>
 									<div class="col-sm-6 multi-gd-img multi-gd-text ">
-										<a href="womens.html"><img src="images/top1.jpg" alt=" "/></a>
+										<a href="nf.html"><img src="images/top1.jpg" alt=" "/></a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -294,9 +294,9 @@
 							<div class="w3-address-left">
 								<i class="fa fa-phone" aria-hidden="true"></i>
 							</div>
-							<div class="w3-address-right">
+							<!-- <div class="w3-address-right"> -->
 								<h6>联系电话</h6>
-								<a href="tel:13114908861">+86 131 1490 8861</p>
+								<!-- <a href="tel:13114908861"> -->+86 131 1490 8861</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -318,7 +318,7 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-<p class="copy-right">本站点不构成任何购买建议，仅作为宣传展示。</p>
+<p class="copy-right">本站点不构成任何购买建议，仅作为宣传展示，仅供参考。</p>
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 <!-- js -->
