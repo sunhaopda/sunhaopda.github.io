@@ -164,7 +164,7 @@
 	 </div>
 	   <div class="contact-w3-agile1 map" data-aos="flip-right">
 			
-		   <iframe src="map.html" frameBorder=0 height=600 width=500 scrolling=no></iframe>
+		   <iframe src="map.html" frameBorder=0 height=1900 width=320 scrolling=no></iframe>
 	   </div>
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">

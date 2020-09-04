@@ -158,23 +158,23 @@
 				<div class="flexslider">
 					
 					<ul class="slides">
-						<li data-thumb="images/all/03695cda/medium.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/medium.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/3ce1d42b/small.jpg">
+							<div class="thumb-image"> <img src="images/all/3ce1d42b/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/94120e4c/small.jpg">
-							<div class="thumb-image"> <img src="images/all/94120e4c/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/525b9e97/small.jpg">
+							<div class="thumb-image"> <img src="images/all/525b9e97/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>	
-						<li data-thumb="images/all/f10a5888/small.jpg">
-							<div class="thumb-image"> <img src="images/all/f10a5888/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/2c6f6c57/small.jpg">
+							<div class="thumb-image"> <img src="images/all/2c6f6c57/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/0013fd42/small.jpg">
-							<div class="thumb-image"> <img src="images/all/0013fd42/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/015964a3/small.jpg">
+							<div class="thumb-image"> <img src="images/all/015964a3/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/c47c8ade/small.jpg">
-							<div class="thumb-image"> <img src="images/all/c47c8ade/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/a9eaaf3b/small.jpg">
+							<div class="thumb-image"> <img src="images/all/a9eaaf3b/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/03695cda/small.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/d72b2342/small.jpg">
+							<div class="thumb-image"> <img src="images/all/d72b2342/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
 					</ul>
 					<div class="clearfix"></div>
@@ -183,7 +183,7 @@
 		</div>
 		<div class="col-md-8 single-right-left simpleCart_shelfItem">
 					<h3>冰蓝天使</h3>
-					<p><span class="item_price">￥5??</span> <del>￥2496</del></p>
+					<p><span class="item_price">￥6??</span> <del>￥2469</del></p>
 					<div class="rating1">
 						<span class="starRating">
 							<input id="rating5" type="radio" name="rating" value="5" checked="">

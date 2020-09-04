@@ -170,12 +170,6 @@
 						<li data-thumb="images/all/04b7b82d/small.jpeg">
 							<div class="thumb-image"> <img src="images/all/04b7b82d/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/c47c8ade/small.jpg">
-							<div class="thumb-image"> <img src="images/all/c47c8ade/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/all/03695cda/small.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
 					</ul>
 					<div class="clearfix"></div>
 				</div>	

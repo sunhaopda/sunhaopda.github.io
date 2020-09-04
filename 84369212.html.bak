@@ -161,6 +161,10 @@
 						<li data-thumb="images/all/093c18d6/small.jpg">
 							<div class="thumb-image"> <img src="images/all/093c18d6/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
+						<li data-thumb="images/all/093c18d6/small.jpg">
+							<div class="thumb-image"> <img src="images/all/093c18d6/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						</li>
+
 					</ul>
 					<div class="clearfix"></div>
 				</div>	

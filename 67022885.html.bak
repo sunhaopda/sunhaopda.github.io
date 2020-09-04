@@ -158,23 +158,17 @@
 				<div class="flexslider">
 					
 					<ul class="slides">
-						<li data-thumb="images/all/03695cda/medium.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/medium.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/0729b3d6/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/0729b3d6/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/94120e4c/small.jpg">
-							<div class="thumb-image"> <img src="images/all/94120e4c/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/7fcf833a/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/7fcf833a/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>	
-						<li data-thumb="images/all/f10a5888/small.jpg">
-							<div class="thumb-image"> <img src="images/all/f10a5888/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/3d2c58dc/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/3d2c58dc/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/0013fd42/small.jpg">
-							<div class="thumb-image"> <img src="images/all/0013fd42/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/all/c47c8ade/small.jpg">
-							<div class="thumb-image"> <img src="images/all/c47c8ade/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/all/03695cda/small.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/3e72ed44/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/3e72ed44/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
 					</ul>
 					<div class="clearfix"></div>

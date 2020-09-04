@@ -158,23 +158,23 @@
 				<div class="flexslider">
 					
 					<ul class="slides">
-						<li data-thumb="images/all/03695cda/medium.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/medium.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/612de55f/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/612de55f/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/94120e4c/small.jpg">
-							<div class="thumb-image"> <img src="images/all/94120e4c/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/1c7eaa40/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/1c7eaa40/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>	
-						<li data-thumb="images/all/f10a5888/small.jpg">
-							<div class="thumb-image"> <img src="images/all/f10a5888/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/a3eb43ec/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/a3eb43ec/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/0013fd42/small.jpg">
-							<div class="thumb-image"> <img src="images/all/0013fd42/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/ecdb544d/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/ecdb544d/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/c47c8ade/small.jpg">
-							<div class="thumb-image"> <img src="images/all/c47c8ade/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/55a5aff6/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/55a5aff6/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
-						<li data-thumb="images/all/03695cda/small.jpg">
-							<div class="thumb-image"> <img src="images/all/03695cda/small.jpg" data-imagezoom="true" class="img-responsive"> </div>
+						<li data-thumb="images/all/c6f87528/small.jpeg">
+							<div class="thumb-image"> <img src="images/all/c6f87528/small.jpeg" data-imagezoom="true" class="img-responsive"> </div>
 						</li>
 					</ul>
 					<div class="clearfix"></div>

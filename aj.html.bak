@@ -321,7 +321,7 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<p class="copy-right">本站点不构成任何购买建议，仅作为宣传展示。</p>
+<p class="copy-right">本站点不构成任何购买建议，仅作为宣传展示，仅供参考。</p>
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
